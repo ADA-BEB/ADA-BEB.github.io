@@ -1,37 +1,464 @@
----
-layout: default
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Bootstrap, Parallax, Template, Registration, Landing">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Grayrids">
+    <title>Sexual disparities in police stops across the US</title>
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/line-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/responsive.css">
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+  </head>
+  <body>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
+    <!-- Header Section Start -->
+    <header id="hero-area" data-stellar-background-ratio="0.5">    
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a href="index.html" class="navbar-brand"><img class="img-fulid" src="img/logo_beb.png" alt="" width="200"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="lnr lnr-menu"></i>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#hero-area">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#RQ1">Threshold test</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#RQ2">Veil of Darkness</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#RQ3">Years of experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#blog">More</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+        <!-- Mobile Menu Start -->
+        <ul class="mobile-menu">
+           <li>
+              <a class="page-scroll" href="#">Home</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="##RQ1">Threshold test</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="##RQ2">Veil of Darkness</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#RQ3">Years of experience</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#team">Team</a>
+            </li>
+            <li >
+              <a class="page-scroll" href="#blog">More</a>
+            </li>
+        </ul>
+        <!-- Mobile Menu End -->
+
+      </nav>
+      <!-- Navbar End -->   
+      <div class="container">      
+        <div class="row justify-content-md-center">
+          <div class="col-md-10">
+            <div class="contents text-center">
+              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Gender bias in Police stop across the US</h1>
+              <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Do police stop more men than women?</p>
+              <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Discover more</a>
+            </div>
+          </div>
+        </div> 
+      </div>           
+    </header>
+    <!-- Header Section End --> 
+
+    <!-- Services Section Start -->
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Police stops in the US</h2>
+          <hr class="lines wow zoomIn" data-wow-delay="0.3s">
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Here, we should present some relevant stats</p>
+        </div>
+        <div>
+          In the paper, Pierson et al. investigate whether there is racial discrimination in police stops across the US. As our creative extension, we propose to examine the dataset from a different angle, sexual discrimination in police stops in some specific states in the US. We think this topic is interesting because we can apply some of the techniques that were applied in the original paper. We will start by analyzing who carries more contrabands, men or women. Then we investigate the contrabands by their types, such as drugs and weapons. Furthermore, we will use the "Veil of the Darkness" test from the paper and observe stop rates around dusk time for each of the sexes. Lastly, we will inspect if the officers with less experience are more sexist or avoid such discrimination due to lack of experience.
+ 
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Features Section Start -->
+    <section id="features" class="section" data-stellar-background-ratio="0.2">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Some statistics here</h2>
+          <hr class="lines">
+          <p class="section-subtitle">Here, we should highlight some interesting facts</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 col-md-12 col-xs-12">
+            <div class="container">
+              <div class="row">
+                 <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                    <span class="icon">
+                      <i class="lnr lnr-rocket"></i>
+                    </span>
+                    <div class="text">
+                      <h4>Number of police stop in general</h4>
+                      <p>Across the state of Florida, here's the number of police stops</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                    <span class="icon">
+                      <i class="lnr lnr-laptop-phone"></i>
+                    </span>
+                    <div class="text">
+                      <h4>Stops among women</h4>
+                      <p>Blablabla</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                    <span class="icon">
+                      <i class="lnr lnr-layers"></i>
+                    </span>
+                    <div class="text">
+                      <h4>Stop by gender and race</h4>
+                      <p>Blablabla</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                    <span class="icon">
+                      <i class="lnr lnr-cog"></i>
+                    </span>
+                    <div class="text">
+                      <h4>Women killed by police</h4>
+                      <p>blablabla</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xs-12">
+            <div class="show-box">
+              <img class="img-fulid" src="img/features/muted.png" alt="" height="120%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Features Section End -->    
+
+    <!-- Portfolio Section -->
+    <section id="portfolios" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Research Question 1</h2>
+          <hr class="lines">
+          <p class="section-subtitle">Based on the successful search rate, is there a potential bias in searching drivers for contraband? --- threshold test</p>
+        </div>
+        
+      </div>
+      <!-- Container Ends -->
+    </section>
+    <!-- Portfolio Section Ends --> 
+
+    <!-- Start Video promo Section -->
+    <section class="video-promo section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+              <div class="video-promo-content text-center">
+                <h2 class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Data visualization</h2>
+                <p class="wow zoomIn" data-wow-duration="1000ms" data-wow-delay="100ms">Here, we need to add some plots.</p>
+                <a href="https://www.youtube.com/watch?v=IXoMDwh4Cq8" class="video-popup wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s"><i class="lnr lnr-code"></i></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Video Promo Section -->
+
+    <!-- Start Pricing Table Section -->
+    <div id="RQ2" class="section">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Research Question 2</h2>
+          <hr class="lines">
+          <p class="section-subtitle">Do officers stop and search men more than women? --- veil of darkness</p>
+        </div>
+      </div>
+    </div>
+    <!-- End Pricing Table Section -->
+
+    <!-- Counter Section Start -->
+    <div class="counters section" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <h2 class="section-title-counter">Some statistics again</h2>
+        <div class="row"> 
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="facts-item">   
+              <div class="icon">
+                <i class="lnr lnr-clock"></i>
+              </div>             
+              <div class="fact-count">
+                <h3><span class="counter">1589</span></h3>
+                <h4>Working Hours</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="facts-item">   
+              <div class="icon">
+                <i class="lnr lnr-briefcase"></i>
+              </div>            
+              <div class="fact-count">
+                <h3><span class="counter">699</span></h3>
+                <h4>Completed Projects</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="facts-item"> 
+              <div class="icon">
+                <i class="lnr lnr-user"></i>
+              </div>              
+              <div class="fact-count">
+                <h3><span class="counter">203</span></h3>
+                <h4>No. of Clients</h4>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 col-lg-3">
+            <div class="facts-item"> 
+              <div class="icon">
+                <i class="lnr lnr-heart"></i>
+              </div>              
+              <div class="fact-count">
+                <h3><span class="counter">1689</span></h3>
+                <h4>Peoples Love</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counter Section End -->
+
+    <div id="RQ3" class="section">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Research Question 3</h2>
+          <hr class="lines">
+          <p class="section-subtitle">Do officers with less experience stop men more than women? --- veil of darkness</p>
+        </div>
+      </div>
+    </div>
+
+      <!-- testimonial Section Start -->
+      <div id="testimonial" class="section" data-stellar-background-ratio="0.1">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-md-12">
+              <div class="touch-slider owl-carousel owl-theme">
+                <div class="testimonial-item">
+                  <img src="img/testimonial/customer1.jpg" alt="Client Testimonoal" />
+                  <div class="testimonial-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
+                    <h3>Jone Deam</h3>
+                    <span>Fondor of Jalmori</span>
+                  </div>
+                </div>
+                <div class="testimonial-item">
+                  <img src="img/testimonial/customer2.jpg" alt="Client Testimonoal" />
+                  <div class="testimonial-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
+                    <h3>Oidila Matik</h3>
+                    <span>President Lexo Inc</span>
+                  </div>
+                </div>
+                <div class="testimonial-item">
+                  <img src="img/testimonial/customer3.jpg" alt="Client Testimonoal" />
+                  <div class="testimonial-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
+                    <h3>Alex Dattilo</h3>
+                    <span>CEO Optima Inc</span>
+                  </div>
+                </div>
+                <div class="testimonial-item">
+                  <img src="img/testimonial/customer4.jpg" alt="Client Testimonoal" />
+                  <div class="testimonial-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. send do <br> adipisicing ciusmod tempor incididunt ut labore et</p>
+                    <h3>Paul Kowalsy</h3>
+                    <span>CEO & Founder</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div>
+      </div>
+      <!-- testimonial Section Start -->
+
+    <!-- Team section Start -->
+    <section id="team" class="section">
+      <div class="container">
+        <div class="section-header">          
+          <h2 class="section-title">Our Team</h2>
+          <hr class="lines">
+          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="single-team">
+              <img src="img/team/team1.jpg" alt="">
+              <div class="team-details">
+                <div class="team-inner">
+                  <h4 class="team-title">Jhon Doe</h4>
+                  <p>Chief Technical Officer</p>
+                  <ul class="social-list">
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="single-team">
+              <img src="img/team/team2.jpg" alt="">
+              <div class="team-details">
+                <div class="team-inner">
+                  <h4 class="team-title">Paul Kowalsy</h4>
+                  <p>CEO & Co-Founder</p>
+                  <ul class="social-list">
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="single-team">
+              <img src="img/team/team3.jpg" alt="">
+              <div class="team-details">
+                <div class="team-inner">                  
+                  <h4 class="team-title">Emilly Williams</h4>
+                  <p>Business Manager</p>
+                  <ul class="social-list">
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="single-team">
+              <img class="img-fulid" src="img/team/team4.jpg" alt="">
+              <div class="team-details">
+                <div class="team-inner">
+                  <h4 class="team-title">Patricia Green</h4>
+                  <p>Graphic Designer</p>
+                  <ul class="social-list">
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Team section End -->
+
+    <!-- Footer Section Start -->
+    <footer>          
+      <div class="container">
+        <div class="row">
+          <!-- Footer Links -->
+          <div class="col-lg-12 col-sm-12 col-xs-12">
+            <div class="copyright">
+              <p>Team BEB</p>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End --> 
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lnr lnr-arrow-up"></i>
+    </a>
+    
+    <div id="loader">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
+    </div>     
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mixitup.js"></script>
+    <script src="js/nivo-lightbox.js"></script>
+    <script src="js/owl.carousel.js"></script>    
+    <script src="js/jquery.stellar.min.js"></script>    
+    <script src="js/jquery.nav.js"></script>    
+    <script src="js/scrolling-nav.js"></script>    
+    <script src="js/jquery.easing.min.js"></script>    
+    <script src="js/smoothscroll.js"></script>    
+    <script src="js/jquery.slicknav.js"></script>     
+    <script src="js/wow.js"></script>   
+    <script src="js/jquery.vide.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>    
+    <script src="js/jquery.magnific-popup.min.js"></script>    
+    <script src="js/waypoints.min.js"></script>    
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>   
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
