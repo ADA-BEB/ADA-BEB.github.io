@@ -1,0 +1,20 @@
+Depuis la nuit des temps, la société a tendance à marginaliser les minorités. Dans nos sociétés modernes, cela se caractérise par des verrous institutionnels, des restrictions, des ségrégations à l'embauche ou des difficultés à obtenir un logement décent. Ces points sont multiples et ne peuvent être tous cités. 
+Pierson et al. dans leur article présente un élément pouvant être un baromètre des injustices envers les minorités dans notre société. Les auteurs se focalisent sur la tendance qu'aurait la police à contrôler des personnes issues de minorités plus souvent que les autres. Cette injustice propre à nos sociétés a la particularité de passer inaperçue car difficile à prouver. Les auteurs tâclent cette faiblesse en utilisant des données. À travers leurs analyses, ils démontrent que la police, à l'image de nos sociétés, a tendance à faire subir de l'injustice aux minorités.
+
+Leurs tests s'appuient principalement sur le voile d'obscurité et le threshold test qui seront présentés plus tard dans cet article.
+
+En lisant ce papier de Pierson et al. et en parcourant les données utilisées dans l'enquête, nous n'avons pu nous empêcher de faire le parallèle avec une partie de la population qui subit autant d'injustice que les minorités. Il s'agit des femmes.
+
+Bien que leur place dans la société soit centrale, on constate qu'en 2018 aux Etats-Unis, les femmes touchaient en moyenne $10194 de moins que les hommes pour le même poste. Ce gap est encore plus grand chez les femmes noires et hispaniques qui touchent respectivement $23540 et $28036 de moins que les hommes. (source: https://www.census.gov/programs-surveys/acs/)
+// TODO: Add image
+
+Etant donné les similitudes entre les minorités et les femmes en terme de justice sociale, nous avons estimé qu'il serait judicieux de voir si cette injustice se présente aussi dans les arrestations policières.
+
+Pour cela, nous avons divisé notre analyse en trois parties:
+- RQ1: // TODO: Add a short description
+- RQ2: //Same
+- RQ3: // Same
+
+Tout au long de notre analyse, nous illustrerons des faits à travers des graphiques et des données chiffrées foculisées sur des Etats bien précis.
+
+

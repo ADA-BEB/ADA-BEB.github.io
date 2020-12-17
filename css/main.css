@@ -68,7 +68,8 @@ a {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Poppins', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: unset;
   font-size: 40px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -434,7 +435,7 @@ button:focus {
 }
 
 #hero-area .contents {
-  padding: 200px 0 130px;
+  padding: 200px 0 200px;
 }
 
 #hero-area .contents h1 {

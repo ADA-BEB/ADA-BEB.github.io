@@ -90,7 +90,7 @@
         <div class="row justify-content-md-center">
           <div class="col-md-10">
             <div class="contents text-center">
-              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Gender bias in Police stop across the US</h1>
+              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">GENDER BIAS IN POLICE STOP ACROSS THE US</h1>
               <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Do police stop more men than women?</p>
               <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Discover more</a>
             </div>
@@ -104,14 +104,11 @@
     <section id="services" class="section">
       <div class="container">
         <div class="section-header">          
-          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Police stops in the US</h2>
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Introduction</h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Here, we should present some relevant stats</p>
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">-</p>
         </div>
-        <div>
-          In the paper, Pierson et al. investigate whether there is racial discrimination in police stops across the US. As our creative extension, we propose to examine the dataset from a different angle, sexual discrimination in police stops in some specific states in the US. We think this topic is interesting because we can apply some of the techniques that were applied in the original paper. We will start by analyzing who carries more contrabands, men or women. Then we investigate the contrabands by their types, such as drugs and weapons. Furthermore, we will use the "Veil of the Darkness" test from the paper and observe stop rates around dusk time for each of the sexes. Lastly, we will inspect if the officers with less experience are more sexist or avoid such discrimination due to lack of experience.
- 
-        </div>
+        <div id="includeIntroduction"></div>
       </div>
     </section>
     <!-- Services Section End -->
@@ -423,6 +420,11 @@
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="js/jquery-min.js"></script>
+    <script> 
+      $(function(){
+        $("#includeIntroduction").load("include/introduction.html"); 
+      });
+      </script> 
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mixitup.js"></script>
@@ -442,6 +444,7 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>   
     <script src="js/main.js"></script>
+    
 
   </body>
 </html>
