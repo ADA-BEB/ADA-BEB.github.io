@@ -15,7 +15,6 @@
     <li style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; font-size: 16px; font-family: Calibri, sans-serif;"><strong>Contraband_found</strong>: Used to calculate the success rate of a stop.</li>
 </ul>
 
-<div id="rq1_1"></div>
 <br>
 <b>Data analysis:</b>
 
@@ -27,10 +26,10 @@
 <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>We analyzed successful search rates across gender to highlight a potential disparity between men and women.</p>
 <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
 <p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>In order to reach this goal, we recorded all the arrests made in each county of the State of Arizona. We obtained the following distribution:</p>
-<div id="rq1_2.html"></div>
+<div id="rq1_2"></div>
 
 <p>The arrests are distributed according to the following plot:</p>
-<div id="rq1_3.html"></div>
+<div id="rq1_3"></div>
 <br>
 <b>Results:</b>
 
@@ -44,7 +43,14 @@
   <figcaption><b>Hit rate by gender and location.</b> Data for state patrol based on 15682 stops in the State of Arizona, with points corresponding to counties.</figcaption>
 </figure>
 
+ <script> 
 
+      $(function(){
+        //$("#rq1_1").load("./include/rq1_1.html");
+        $("#rq1_2").load("./include/rq1_2.html");
+        $("#rq1_3").load("./include/rq1_3.html");
+      });
+      </script> 
 
 
 
