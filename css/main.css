@@ -435,12 +435,12 @@ button:focus {
 }
 
 #hero-area .contents {
-  padding: 200px 0 200px;
+  padding: 450px 0 450px;
 }
 
 #hero-area .contents h1 {
   color: #FFF;
-  font-size: 52px;
+  font-size: 70px;
   font-weight: 900;
   margin-bottom: 25px;
 }
