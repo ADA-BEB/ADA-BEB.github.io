@@ -43,7 +43,7 @@
                 <a class="nav-link page-scroll" href="#hero-area">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#RQ1">Threshold test</a>
+                <a class="nav-link page-scroll" href="#RQ1">Outcome test</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#RQ2">Veil of Darkness</a>
@@ -53,9 +53,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#team">Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#blog">More</a>
               </li>
             </ul>
           </div>
@@ -106,7 +103,6 @@
         <div class="section-header">          
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Introduction</h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">-</p>
         </div>
         <div id="includeIntroduction"></div>
         <div id="includePlot"></div>
@@ -118,30 +114,30 @@
     <section id="features" class="section" data-stellar-background-ratio="0.2">
       <div class="container">
         <div class="section-header">          
-          <h2 class="section-title">Some statistics here</h2>
+          <h2 class="section-title">Statistics</h2>
           <hr class="lines">
-          <p class="section-subtitle">Here, we should highlight some interesting facts</p>
+          <p class="section-subtitle">Some interesting facts about gender inequality</p>
         </div>
         <div class="row">
-          <div class="col-lg-8 col-md-12 col-xs-12">
+          <div class="col-lg-12 col-md-12 col-xs-12">
             <div class="container">
               <div class="row">
                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
                     <span class="icon">
-                      <i class="lnr lnr-rocket"></i>
+                      <i class="lnr lnr-car"></i>
                     </span>
                     <div class="text">
-                      <h4>Number of police stop in general</h4>
-                      <p>Across the state of Florida, here's the number of police stops</p>
+                      <h4>Higher chances of getting killed in car crashes</h4>
+                      <p>Women are 47% more likely to suffer severe injuries in car crashes because safety features are designed for men</p>
                     </div>
                   </div>
                   <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
                     <span class="icon">
-                      <i class="lnr lnr-laptop-phone"></i>
+                      <i class="lnr lnr-heart"></i>
                     </span>
                     <div class="text">
-                      <h4>Stops among women</h4>
-                      <p>Blablabla</p>
+                      <h4>Early marriages</h4>
+                      <p>Globally, 12 million girls each year get married before the age of 18 - roughly 33,000 every day, or one every two seconds. There are some 650 million women alive today who were child brides.</p>
                     </div>
                   </div>
                   <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
@@ -149,8 +145,8 @@
                       <i class="lnr lnr-layers"></i>
                     </span>
                     <div class="text">
-                      <h4>Stop by gender and race</h4>
-                      <p>Blablabla</p>
+                      <h4>Gender gap</h4>
+                      <p style="padding-right: 10px;">At the current rate of progress, it will take another 108 years to reach gender parity, according to the World Economic Forum’s most recent Global Gender Gap <a href="http://www3.weforum.org/docs/WEF_GGGR_2018.pdf">report</a></p>
                     </div>
                   </div>
                   <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
@@ -158,18 +154,20 @@
                       <i class="lnr lnr-cog"></i>
                     </span>
                     <div class="text">
-                      <h4>Women killed by police</h4>
-                      <p>blablabla</p>
+                      <h4>22% of AI professionals are women </h4>
+                      <p>Only 22% of the world's AI professionals are female, compared with 78% who are male - This could be down to lack of confidence. This accounts for a gender gap of 72% yet to close - and reflects the broader STEM skills gap.</p>
                     </div>
                   </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-xs-12">
+          <!--
+          <div class="col-lg-2 col-xs-12">
             <div class="show-box">
               <img class="img-fulid" src="img/features/muted.png" alt="" height="120%">
             </div>
           </div>
+        -->
         </div>
       </div>
     </section>
@@ -182,7 +180,8 @@
         <div class="section-header">          
           <h2 class="section-title">Research Question 1</h2>
           <hr class="lines">
-          <p class="section-subtitle">Based on the successful search rate, is there a potential bias in searching drivers for contraband? --- threshold test</p>
+          <p class="section-subtitle">
+            Do police stop women more than men based on less evidence?</p>
         </div>
         
       </div>
@@ -425,9 +424,9 @@
     <script> 
 
       $(function(){
-        $("#includeIntroduction").load("include/introduction.html"); 
-        $("#includePlot").load("include/test_plotly.html");
-        $("#Arizona_dusk_delta_stops").load("include/rq2_melike/Arizona_dusk_delta_stops.html");
+        $("#includeIntroduction").load("./include/introduction.html"); 
+        //$("#includePlot").load("include/test_plotly.html");
+        //$("#Arizona_dusk_delta_stops").load("include/rq2_melike/Arizona_dusk_delta_stops.html");
       });
       </script> 
     <script src="js/popper.min.js"></script>
