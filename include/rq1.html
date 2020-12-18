@@ -1,0 +1,51 @@
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>In order to determine if the police are sexist against women, we should answer the question of knowing <strong>whether women are checked more than men based on less evidence</strong>?</p>
+<br>
+<h2>Description of the dataset:</h2>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>To answer the above question, we use a dataset from the <strong>Stanford Open Policing Project</strong>.</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>The data collected for this project came from nearly 50 state patrol agencies and over 100 municipal police department. The initial version on this dataset contains data of over 95 million stops.</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>For obvious reasons related to the time devoted to this work and our limited resources, we focused on one state: <strong>Arizona</strong>. The dataset used contains information of stops made by the State Patrol over a period from January 2009 to December 2017.</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>This dataset has 29 variables on each stop. As most of them are not essential for our analysis, we focused on the following information:</p>
+<ul>
+    <li style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; font-size: 16px; font-family: Calibri, sans-serif;"><strong>ID</strong>: Unique identifier of each stop</li>
+    <li style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; font-size: 16px; font-family: Calibri, sans-serif;"><strong>Date</strong>: This information allows us to filter the stops. In fact, in our analysis, we deemed it necessary to use data from a single year, that of 2017.</li>
+    <li style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; font-size: 16px; font-family: Calibri, sans-serif;"><strong>County_name</strong>: Each state is subdivided into county. In our analysis, we use this information to aggregate our data.</li>
+    <li style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; font-size: 16px; font-family: Calibri, sans-serif;"><strong>Subject_sex</strong>: Allows us to do a filter based on gender.</li>
+    <li style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 0cm; font-size: 16px; font-family: Calibri, sans-serif;"><strong>Contraband_found</strong>: Used to calculate the success rate of a stop.</li>
+</ul>
+
+<div id="rq1_1"></div>
+<br>
+<h2>Data analysis:</h2>
+
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>As you can see on the figure above, we have a total of 3,124,582 stops or 2,176,663 stops made on men and 947,919 on women.</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>This distribution is not very significant given several factors that should be taken into account. Since we don&apos;t have enough information on the demography of the region, we pushed our analysis more in depth in another direction.</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>In order to verify whether women are more unfairly controlled than men, we used the outcome test as presented in the paper by Pierson et al.</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>We analyzed successful search rates across gender to highlight a potential disparity between men and women.</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>In order to reach this goal, we recorded all the arrests made in each county of the State of Arizona. We obtained the following distribution:</p>
+<div id="rq1_2.html"></div>
+
+<p>The arrests are distributed according to the following plot:</p>
+<div id="rq1_3.html"></div>
+<br>
+<h2>Results:</h2>
+
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>As you can see, the arrests of men are clearly higher than those of women.</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>However, as we will see, Arizona state police tend to arrest women on the basis of less evidence.</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>&nbsp;</p>
+<p style='margin:0cm;font-size:16px;font-family:"Calibri",sans-serif;'>Indeed, <strong>when we count the number of successful searches</strong> by county and by gender, we see that for <strong>the checks carried out on the two genres, those of men are much more successful</strong>.</p>
+
+<figure>
+  <img src="./img/outcome.png" style="text-align:center; display:block">
+  <figcaption><b>Hit rate by gender and location.</b> Data for state patrol based on 15682 stops in the State of Arizona, with points corresponding to counties.</figcaption>
+</figure>
+
+
+
+
+
